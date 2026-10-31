@@ -26,7 +26,7 @@ os.chdir(str(ROOT))                      # relative paths only (non-ASCII path s
 SIZE = 128
 CELL = 512
 PREVIEW = 256
-SELECTED = "01"
+SELECTED = "03"
 CAND_DIR = Path("logo/candidates")
 LOGO_OUT = Path("logo/logo.png")
 
@@ -127,10 +127,7 @@ SVG_03 = svg_open("""
   <circle cx="124" cy="136" r="2.8"/>
   <circle cx="132" cy="136" r="2.8"/>
 </g>
-%s
-""" % (SHADOW, VIOLET, INK, PUMPKIN,
-       star(58, 62, 10, 4.2, BONE, .9) + star(198, 76, 12, 5.0, BONE, .85)
-       + star(184, 46, 7, 3.0, BONE, .7)))
+""" % (SHADOW, VIOLET, INK, PUMPKIN))
 
 SVG_04 = svg_open("""
 <defs>
